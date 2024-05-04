@@ -85,3 +85,15 @@ secondary #3f54a3
     @apply bg-background text-foreground;
   }
 }
+
+.react-slideshow-container>.nav {
+  padding: 5px !important;
+}
+
+.react-slideshow-container>.nav:first-child {
+  left: 5px !important;
+}
+
+.react-slideshow-container>.nav:last-child {
+  right: 5px !important;
+}

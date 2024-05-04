@@ -3,8 +3,9 @@ import Image from "next/image"
 
 
 export const NavBar = () => {
-  return <nav>
-    <div className="flex items-center justify-center gap-[55rem] py-3 ">
+
+  return <nav className="border-b-2">
+    <div className="flex items-center justify-between px-8 md:px-20 lg:px-40  py-3 ">
       <div className="flex items-center">
         <Image src="/logo.png" alt="Logo" width={60} height={60} />
         <div className="leading-4 text-center">
@@ -13,10 +14,10 @@ export const NavBar = () => {
         </div>
       </div>
       <div>
-        <ul className="flex items-center gap-4">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul className="flex items-center gap-8">
+          <li className="font-semibold cursor-pointer">Home</li>
+          <li className="font-semibold cursor-pointer">About</li>
+          <li className="font-semibold cursor-pointer">Contact</li>
         </ul>
       </div>
     </div>
