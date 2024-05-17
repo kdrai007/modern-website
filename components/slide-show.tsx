@@ -20,7 +20,7 @@ export const SlideShow = () => {
   ]
   return <Slide>
     {slides.map((slide, index) => <div key={index} className={`w-full h-[50vh]`}>
-      <img src={slide.url} alt="" className="w-full h-full object-cover" />
+      <img src={slide.url} alt="hero-image" className="w-full h-full object-cover" />
     </div>)}
   </Slide>
 

@@ -1,4 +1,5 @@
-import { NavBar } from "@/components/nav-bar";
+import { AboutSchool } from "@/components/about-school";
+import { Card } from "@/components/card-section";
 import { SlideShow } from "@/components/slide-show";
 import React from "react";
 
@@ -6,6 +7,8 @@ export default function Home() {
   return (
     <main className="h-full">
       <SlideShow />
+      <AboutSchool />
+      <Card />
     </main>
   );
 }

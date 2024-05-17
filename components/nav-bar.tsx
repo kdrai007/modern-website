@@ -1,8 +1,15 @@
 'use client';
 import Image from "next/image"
+import Link from "next/link";
 
 
 export const NavBar = () => {
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+  ];
+
 
   return <nav className="border-b-2">
     <div className="flex items-center justify-between px-8 md:px-20 lg:px-40  py-3 ">
@@ -15,9 +22,7 @@ export const NavBar = () => {
       </div>
       <div>
         <ul className="flex items-center gap-8">
-          <li className="font-semibold cursor-pointer">Home</li>
-          <li className="font-semibold cursor-pointer">About</li>
-          <li className="font-semibold cursor-pointer">Contact</li>
+          {navItems.map((item) => <li key={item.name} className="text-base font-semibold underline-affect text-black/80"><Link href={item.href}>{item.name}</Link></li>)}
         </ul>
       </div>
     </div>
