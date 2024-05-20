@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/components/nav-bar";
 import { SideIcons } from "@/components/side-icons";
+import { Footer } from "@/components/footer";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <SideIcons />
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

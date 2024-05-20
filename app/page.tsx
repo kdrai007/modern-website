@@ -1,5 +1,5 @@
 import { AboutSchool } from "@/components/about-school";
-import { Card } from "@/components/card-section";
+import { Card } from "@/components/card";
 import { SlideShow } from "@/components/slide-show";
 import React from "react";
 

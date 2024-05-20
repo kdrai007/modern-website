@@ -1,4 +1,3 @@
-import { link } from "fs"
 import Link from "next/link"
 
 
@@ -28,7 +27,7 @@ export const SideIcons = () => {
   ]
   return <div className="fixed top-[40%] right-2 space-y-4 z-10">
     {socialIcons.map((icon) => <Link href={icon.link} key={icon.name} className="block">
-      <img src={icon.icon} alt={icon.name} className="w-10 h-10" />
+      <img src={icon.icon} alt={icon.name} className="w-8 h-8 hover:scale-125 transition-all duration-300" />
     </Link>)}
   </div>
 }
