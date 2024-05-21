@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="h-full">
+    <main className="">
       <SlideShow />
       <AboutSchool />
       <Card />
